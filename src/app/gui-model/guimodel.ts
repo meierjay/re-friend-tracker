@@ -416,13 +416,13 @@ export class GuiModel {
                             "icon": "fa-calendar-alt",
                             "color": "pumpkin",
                             "search": true,
-                            "url": "/activity",
+                            "url": "/activity,
                             "form": {
                                 "form": "ActivityForm"
                             }
                         },
                     ]
-                },
+                }
             ]
         }
     };
