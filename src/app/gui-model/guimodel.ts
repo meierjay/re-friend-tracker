@@ -336,7 +336,7 @@ export class GuiModel {
                             "search": true,
                             "url": "/friend/:friendKey/activity",
                             "form": {
-                                "form": "ActivityForm"
+                                "form": "AddActivityForm"
                             }
                         },
                     ]
@@ -363,6 +363,32 @@ export class GuiModel {
                             "color": "blue",
                             "search": true,
                             "url": "/location",
+                            "page": "editlocationpage",
+                        },
+                    ]
+                },
+                {
+                    "id": "editlocationpage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "button",
+                            "name": "NewLocation",
+                            "icon": "fa-home",
+                            "color": "green",
+                            "width": 2,
+                            "form": {
+                                "form": "LocationForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-home",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/location/:locationKey/activity",
                             "form": {
                                 "form": "LocationForm"
                             }
@@ -417,6 +443,31 @@ export class GuiModel {
                             "color": "pumpkin",
                             "search": true,
                             "url": "/activity",
+                            "page": "editactivitypage",
+                        },
+                    ]
+                },
+                {
+                    "id": "editactivitypage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "button",
+                            "name": "EditActivity",
+                            "icon": "fa-calendar-alt",
+                            "color": "pumpkin",
+                            "form": {
+                                "form": "ActivityForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-calendar-alt",
+                            "color": "pumpkin",
+                            "search": true,
+                            "url": "/activity/:activityKey/friend",
                             "form": {
                                 "form": "ActivityForm"
                             }
